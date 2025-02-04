@@ -1,18 +1,20 @@
+
 .header{
   display: flex;   
 }
 .navbar{
   align-items: center;
-  padding: 1em 5em;
-  margin-bottom: 2em;
-  color: #00137D;
-  border-bottom: 2px solid #00137D;
+  padding: 2em 8em;
+  background-color: #293dafd2;
+  color: #FFFFFF;
   font-weight: 100;
   display: flex;
   justify-content: space-between;
   justify-items: center;
 }
-
+.titulo{
+  margin-top: 5%;
+}
 .logo{
   display: flex;
   justify-content: center;
@@ -30,11 +32,12 @@
   display: block;
   margin-right: 2.3em ;
   font-size: 120%;
+  margin-top: 5%;
 }
 .link_items a{
-  color: #00137D;
+  color: #FFFFFF;
   text-decoration: none;
-  padding: 5px;
+  padding: 15px;
   transition: .4s;
   border-bottom: 2px solid transparent;
 }
