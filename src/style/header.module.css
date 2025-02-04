@@ -2,6 +2,11 @@
 .header{
   display: flex;   
 }
+.list{
+  display: none;
+  font-size: 80%;
+  font-weight: 200;
+}
 .navbar{
   align-items: center;
   padding: 2em 8em;
@@ -42,7 +47,7 @@
   border-bottom: 2px solid transparent;
 }
 .link_items a:hover{
-  border-color: #00137D;
+  border-color: #FFFFFF;
 }
 .logo > button{
   display: none;
