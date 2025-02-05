@@ -16,6 +16,7 @@
   position: absolute;
   display: block;
 }
+
 .navbar{
   align-items: center;
   padding: 2em 8em;
@@ -47,9 +48,6 @@
   font-size: 120%;
   margin-top: 5%;  
   
-}
-.link{
-  background-color: #00137D;
 }
 .link_items  a{
   color: #FFFFFF;

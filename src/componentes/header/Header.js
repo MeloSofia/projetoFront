@@ -60,7 +60,7 @@ export default function Header() {
 							</li>
 						</ul>
 					</li>
-					<li>
+					<li className={styles.subLista3}>
 						<button onClick={() =>  Nav('consulta')} className={styles.list2}><Link href="/">CONSULTA</Link></button>
 						<ul  className={`${styles.list} ${isNavVisible ==='consulta' ? styles.show: ''}`}>
 							<li>
