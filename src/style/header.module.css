@@ -4,14 +4,22 @@
 }
 .list{
   display: none;
-  font-size: 80%;
+  font-size:70%;
   font-weight: 200;
+}
+.list2{
+  background: none;
+  border: none;
+  font-size: 100%
+}
+.show{
+  position: absolute;
+  display: block;
 }
 .navbar{
   align-items: center;
   padding: 2em 8em;
   background-color: #293dafd2;
-  color: #FFFFFF;
   font-weight: 100;
   display: flex;
   justify-content: space-between;
@@ -30,24 +38,26 @@
   font-weight: 100;
 }
 .link_items{
+  background: none;
   display: flex;
   list-style: none;
 }
 .link_items li{
-  display: block;
   margin-right: 2.3em ;
   font-size: 120%;
-  margin-top: 5%;
+  margin-top: 5%;  
+  
 }
-.link_items a{
+.link{
+  background-color: #00137D;
+}
+.link_items  a{
   color: #FFFFFF;
   text-decoration: none;
+
   padding: 15px;
-  transition: .4s;
   border-bottom: 2px solid transparent;
-}
-.link_items a:hover{
-  border-color: #FFFFFF;
+  text-align: center; 
 }
 .logo > button{
   display: none;

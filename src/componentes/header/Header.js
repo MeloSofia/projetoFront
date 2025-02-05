@@ -5,9 +5,9 @@ import styles from "../../style/header.module.css";
 import React, { useState } from "react";
 import "../../style/reset.css";
 export default function Header() {
-  const [isNavVisible, setIsNavVisible] = useState(true);
-  const Nav = () => {
-		setIsNavVisible(!isNavVisible);
+  const [isNavVisible, setIsNavVisible] = useState(null);
+  const Nav = (menuName) => {
+		setIsNavVisible(isNavVisible === menuName ? null:menuName);
 	};
 	return (
 		<header className="header">
@@ -27,54 +27,53 @@ export default function Header() {
 						<Link href="/">HOME</Link>
 					</li>
 					<li>
-						<button onClick={Nav} className={styles.list2}></button>
-						<Link href="/">MÉDICO</Link>
-						<ul className={styles.list}>
+						<button onClick={() =>  Nav('medico')} className={styles.list2}><Link href="/">MÉDICO</Link></button>
+						<ul className={`${styles.list} ${isNavVisible === 'medico' ? styles.show: ''}`}>
 							<li>
-								<a href="#">Listar</a>
+								<a href="#" className={styles.link}>Listar</a>
 							</li>
 							<li>
-								<a href="#">Editar</a>
+								<a href="#" className={styles.link}>Editar</a>
 							</li>
 							<li>
-								<a href="#">Adicionar</a>
+								<a href="#" className={styles.link}>Adicionar</a>
 							</li>
 							<li>
-								<a href="#">Excluir</a>
-							</li>
-						</ul>
-					</li>
-					<li>
-						<Link href="/">PACIENTE</Link>
-						<ul className={styles.list}>
-							<li>
-								<a href="#">Listar</a>
-							</li>
-							<li>
-								<a href="#">Editar</a>
-							</li>
-							<li>
-								<a href="#">Adicionar</a>
-							</li>
-							<li>
-								<a href="#">Excluir</a>
+								<a href="#" className={styles.link}>Excluir</a>
 							</li>
 						</ul>
 					</li>
 					<li>
-						<Link href="/">CONSULTA</Link>
-						<ul className={styles.list}>
+						<button onClick={() =>  Nav('paciente')} className={styles.list2}><Link href="/">PACIENTE</Link></button>
+						<ul className={`${styles.list} ${isNavVisible ==='paciente' ? styles.show: ''}`}>
 							<li>
-								<a href="#">Listar consultas</a>
+								<a href="#" className={styles.link}>Listar</a>
 							</li>
 							<li>
-								<a href="#">Editar consultas</a>
+								<a href="#" className={styles.link}>Editar</a>
 							</li>
 							<li>
-								<a href="#">Agendar consultas</a>
+								<a href="#" className={styles.link}>Adicionar</a>
 							</li>
 							<li>
-								<a href="#">Cancelar</a>
+								<a href="#"className={styles.link}>Excluir</a>
+							</li>
+						</ul>
+					</li>
+					<li>
+						<button onClick={() =>  Nav('consulta')} className={styles.list2}><Link href="/">CONSULTA</Link></button>
+						<ul  className={`${styles.list} ${isNavVisible ==='consulta' ? styles.show: ''}`}>
+							<li>
+								<a href="#" className={styles.link}>Listar consultas</a>
+							</li>
+							<li>
+								<a href="#" className={styles.link}>Editar consultas</a>
+							</li>
+							<li>
+								<a href="#" className={styles.link}>Agendar consultas</a>
+							</li>
+							<li>
+								<a href="#" className={styles.link}>Cancelar</a>
 							</li>
 						</ul>
 					</li>
