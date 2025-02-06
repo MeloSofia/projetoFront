@@ -1,4 +1,19 @@
 .footer{
-  background-color: aquamarine;
-  margin-top: 27%;
+  background-color: #293dafa8;
+  padding: 1em;
+  color: #FFFFFF;
+  margin-top: 21.3%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5%;
+
 }
+.tituloFooter{
+  margin-top: 1%;
+}
+.legenda{
+  display: flex ;
+  flex-direction: column;
+}
+
