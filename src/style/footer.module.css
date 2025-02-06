@@ -7,7 +7,9 @@
   align-items: center;
   justify-content: center;
   gap: 5%;
-
+}
+.linkFooter:hover{
+  cursor: pointer;
 }
 .tituloFooter{
   margin-top: 1%;

@@ -15,12 +15,21 @@ export default function Footer(){
         alt="Logo Footer">
         </Image>
       </div>
-      <div>
+      <div className={styles.linkFooter}>
         <Image 
-        src="/assets/Doctors-bro.svg"
-        width="100"
-        height="100"
-        alt="Logo Footer">
+        src="/assets/instagram (1).png"
+        width="40"
+        height="40"
+        alt="Logo Insta Footer"
+        >
+        </Image>
+      </div>
+      <div className={styles.linkFooter}>
+        <Image 
+        src="/assets/facebook.png"
+        width="40"
+        height="40"
+        alt="Logo Git Footer">
         </Image>
       </div>
     </div>
