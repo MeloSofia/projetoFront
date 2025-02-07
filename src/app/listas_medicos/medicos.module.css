@@ -1,0 +1,20 @@
+.listaMed{
+  color: #293dafd2;
+  
+}
+.botao{
+  all: unset;
+  background-color: #293dafd2;
+  border-radius: 20px;
+  width: 10%;
+  height: 5vh;
+  color: #FFFFFF;
+  text-align: center;
+  cursor: pointer;
+}
+.container{
+  display: flex;
+  padding: 4em;
+  text-align: center;
+  gap: 32%;
+}
