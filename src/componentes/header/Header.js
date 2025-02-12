@@ -99,7 +99,7 @@ export default function Header() {
 								}`}
 							>
 								<li>
-									<a href="#" className={styles.link}>
+									<a href="/listar_agendamentos" className={styles.link}>
 										Listar consultas
 									</a>
 								</li>

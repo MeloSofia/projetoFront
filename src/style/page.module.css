@@ -13,3 +13,16 @@
     font-size: 130%;
     font-weight: 200;
 }
+.botaoAgendar{
+  border: 0;
+  background-color: #293daf;
+  color: #FFFFFF;
+  padding: 20px;
+  width: 15%;
+  margin-top: 2%;
+  font-size: 110%;
+  border-radius: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
