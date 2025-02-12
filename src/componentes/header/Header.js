@@ -29,7 +29,7 @@ export default function Header() {
 						</li>
 						<li>
 							<button onClick={() => Nav("medico")} className={styles.list2}>
-								<Link href="/">MÉDICO</Link>
+								<Link href="#">MÉDICO</Link>
 							</button>
 							<ul
 								className={`${styles.list} ${
@@ -60,7 +60,7 @@ export default function Header() {
 						</li>
 						<li>
 							<button onClick={() => Nav("paciente")} className={styles.list2}>
-								<Link href="/">PACIENTE</Link>
+								<Link href="#">PACIENTE</Link>
 							</button>
 							<ul
 								className={`${styles.list} ${
@@ -68,7 +68,7 @@ export default function Header() {
 								}`}
 							>
 								<li>
-									<a href="#" className={styles.link}>
+									<a href="/lista_pacientes" className={styles.link}>
 										Listar
 									</a>
 								</li>
@@ -91,7 +91,7 @@ export default function Header() {
 						</li>
 						<li>
 							<button onClick={() => Nav("consulta")} className={styles.list2}>
-								<Link href="/">CONSULTA</Link>
+								<Link href="#">CONSULTA</Link>
 							</button>
 							<ul
 								className={`${styles.list} ${
