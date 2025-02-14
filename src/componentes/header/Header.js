@@ -4,6 +4,7 @@ import Image from "next/image";
 import styles from "../../style/header.module.css";
 import React, { useState } from "react";
 import "../../style/reset.css";
+
 export default function Header() {
   const [isNavVisible, setIsNavVisible] = useState(null);
   const Nav = (menuName) => {

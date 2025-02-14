@@ -73,7 +73,7 @@ export default function Paciente() {
                             <th className={styles.th}>Nome</th>
                             <th className={styles.th}>Telefone</th>
                             <th className={styles.th}>Email</th>
-                            <th className={styles.th}>CPF</th>
+                            <th className={styles.th}>Especialidade</th>
                         </tr>
                     </thead>
                     <tbody>
