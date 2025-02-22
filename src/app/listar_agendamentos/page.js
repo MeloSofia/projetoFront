@@ -101,7 +101,7 @@ export default function ListaConsultas() {
 							))
 						) : (
 							<tr>
-								<td colSpan={5} className={styles.semResultados}>Nenhuma consulta encontrada</td>
+								<td colSpan={5} className={styles.td}>Nenhuma consulta encontrada</td>
 							</tr>
 						)}
 					</tbody>
