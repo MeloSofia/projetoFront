@@ -1,75 +1,30 @@
-.containerPrincipal{
+.containerPrincipal {
   display: flex;
   justify-content: center;
   align-items: center;
   flex-direction: column;
+  padding: 2em;
 }
-.listaMed{
+
+.titulo {
   color: #293dafd2;
+
 }
-.botao{
+
+.botao {
   all: unset;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #293dafd2;
-  border-radius: 20px;
-  width: 10%;
-  height: 5vh;
-  color: #FFFFFF;
-  text-align: center;
-  cursor: pointer;
-}
-.subContainer{
-  display: flex;
-  padding: 4em;
-  gap: 3%;
-  text-align: center;
-  gap: 32%;
-}
-.tabela{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  align-items: center;
-  border-collapse: collapse;
-}
-.paciente:hover{
-  background-color: #293daf63;
-  cursor: pointer;
-}
-.th, .td {
-  border: 1px solid #293dafd2;
-  padding: 15px 80px;
-  color:#293dafd2 ;
-}
-.botaoEstilo{
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background: rgba(0, 0, 0, 0.5);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  }
-.botao2{
-  background: #293dafd2;
-  color: #FFFFFF;
-  padding: 2%;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  border-radius: 10px;  
-  text-align: center;
-  max-height: 70%;
-}
-.input{
-  margin-top: 8%;
-  font-size: 105%;
-  padding: 5%;
-  border: 0;
   border-radius: 10px;
+  padding: 10px 20px;
+  color: #ffffff;
+  cursor: pointer;
+  font-size: 1em;
 }
+
 .lista{
   padding: 0em 3em;
   max-width: 100%;
@@ -80,16 +35,97 @@
   flex-direction: column;
   gap: 5%;
 }
-.lista li{
+.filtros {
+  display: flex;
+  gap: 10px;
+  margin-top: 1%;
+  margin-bottom: 1%;
+}
+
+.input{
+  margin-top: 8%;
+  font-size: 105%;
+  padding: 5%;
+  border: 0;
+  border-radius: 10px;
+}
+.pesquisar:hover{
+  background-color: #293daf63;
+}
+
+.tabela {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  border-collapse: collapse;
+}
+.th, .td, .thMedico, .thPaciente {
+  border: 1px solid #293dafd2;
+  padding: 15px 80px;
+  color:#293dafd2 ;
+}
+.thMedico , .thPaciente{
+  background-color: #293dafd2;
+  color: #ffffff;
+}
+
+.botaoEstilo {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.botao2 {
+  background: #293dafd2;
+  color: #ffffff;
+  padding: 2%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  text-align: center;
+  max-height: 70%;
+}
+
+
+.lista li {
   padding: 5px;
+  border-radius: 5px;
+  cursor: pointer;
 }
+
 .lista li:hover {
-  border-radius: 20px;
-  padding: 1% ;
-  background-color: #ffffff67;
+  background-color: rgba(255, 255, 255, 0.5);
 }
-.medico:hover{
-    background-color: #293daf63;
-    cursor: pointer;
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .containerPrincipal {
+    padding: 1em;
+  }
+
+  .botao {
+    width: auto;
+    padding: 8px 12px;
+  }
+
+  .input {
+    width: 100%;
+  }
+
+  /* table {
+    font-size: 0.9em;
+  }
+
+  th, td {
+    padding: 8px;
+  } */
 }
-  
